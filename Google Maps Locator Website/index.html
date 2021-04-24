@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body>
+
+        <div class="title">Store Locator</div>
+
+        <div class="search-container">
+
+            <div class="search">
+                <input id="zip-code" type="text" placeholder="Enter zip" onkeyup="onEnter(event)"/>
+                <i class="fas fa-search" onclick="getStores()"></i>
+            </div>
+
+        </div>
+
+        <div class="store-list-container">
+
+            <div class="stores-list" id="stores-list-id">
+
+                
+
+
+            </div>
+
+
+        </div>
+
+        
+        <div id="map"></div>
+
+
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="js/index.js" async defer></script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQoctOY8jfjcG-wjrRN2bFW6ULaCXT7Cs&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
+    </body>
+</html>
